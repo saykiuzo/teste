@@ -1,0 +1,190 @@
+<div class="w-full flex flex-col h-[100vh]">
+  <h1 class="text-center text-2xl font-bold">Cadastrar Pessoa Física</h1>
+  <form [formGroup]="createForm" (ngSubmit)="create()">
+    <div class="grid grid-cols-3 gap-4 p-2">
+      <div class="flex flex-col">
+        <label>Nome</label>
+        <input formControlName="name"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <div class="flex flex-col">
+        <label>Email</label>
+        <input formControlName="email"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <div class="flex flex-col">
+        <label>Sobrenome</label>
+        <input formControlName="full_name"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <div class="flex flex-col">
+        <label>CPF</label>
+        <input formControlName="cpf"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <div class="flex flex-col">
+        <label>Data de Nascimento</label>
+        <input formControlName="birthdate"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <div class="flex flex-col">
+        <label>RG</label>
+        <input formControlName="rg"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+    </div>
+
+    <h1 class="text-left text-2xl font-bold mt-4 ml-[20px]">Endereços</h1>
+    <div formArrayName="addresses" class="grid grid-cols-3 gap-4 p-2">
+      <div *ngFor="let address of addresses.controls; index as i" [formGroupName]="i">
+        <div class="flex flex-col">
+          <label>Logradouro</label>
+          <input
+            disabled
+            placeholder="{{address.value.public_place}}"
+            class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+        </div>
+
+        <div class="flex flex-col">
+          <label>Número</label>
+          <input
+            disabled
+            placeholder="{{address.value.number}}"
+            class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+        </div>
+
+        <div class="flex flex-col">
+          <label>CEP</label>
+          <input
+            disabled
+            placeholder="{{address.value.cep}}"
+            class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+        </div>
+
+        <div class="flex flex-col">
+          <label>Complemento</label>
+          <input
+            disabled
+            placeholder="{{address.value.complement}}"
+            class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+        </div>
+
+        <div class="flex flex-col">
+          <label>Cidade</label>
+          <input
+            disabled
+            placeholder="{{address.value.city}}"
+            class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+        </div>
+
+        <div class="flex flex-col">
+          <label>Estado</label>
+          <input
+            disabled
+            placeholder="{{address.value.state}}"
+            class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+        </div>
+        <button (click)="removeAddress(i)">Remove</button>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-4 p-2">
+      <div class="flex flex-col">
+        <label>Logradouro</label>
+        <input
+          formControlName="public_place"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <div class="flex flex-col">
+        <label>Número</label>
+        <input
+          formControlName="number"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <div class="flex flex-col">
+        <label>CEP</label>
+        <input
+          formControlName="cep"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <div class="flex flex-col">
+        <label>Complemento</label>
+        <input
+          formControlName="complement"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <div class="flex flex-col">
+        <label>Cidade</label>
+        <input
+          formControlName="city"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <div class="flex flex-col">
+        <label>Estado</label>
+        <input
+          formControlName="state"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+    </div>
+    <button (click)="addAddress()">Adicionar Endereço</button>
+
+    <h1 class="text-left text-2xl font-bold mt-4 ml-[20px]">Contatos</h1>
+    <div formArrayName="contacts" class="grid grid-cols-3 gap-4 p-2">
+      <div *ngFor="let contact of contacts.controls; index as i" [formGroupName]="i">
+        <div class="flex flex-col">
+          <label>Nome</label>
+          <input disabled
+            placeholder="{{contact.value.contact_name}}"
+            class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+        </div>
+
+        <div class="flex flex-col">
+          <label>Contato</label>
+          <input disabled
+            placeholder="{{contact.value.contact_value}}"
+            class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+        </div>
+
+        <div class="flex flex-col">
+          <label>Tipo contato</label>
+          <input disabled
+            placeholder="{{contact.value.contact_type}}"
+            class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+        </div>
+        <button (click)="removeContact(i)">Remove</button>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-4 p-2">
+      <div class="flex flex-col">
+        <label>Nome</label>
+        <input formControlName="contact_name"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <div class="flex flex-col">
+        <label>Contato</label>
+        <input formControlName="contact_value"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <div class="flex flex-col">
+        <label>Tipo contato</label>
+        <input formControlName="contact_type"
+          class="text-sm sm:text-base placeholder-gray-500 pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <button (click)="addContact()">Adicionar Contato</button>
+    </div>
+
+    <button type="submit">Salvar</button>
+  </form>
+</div>
