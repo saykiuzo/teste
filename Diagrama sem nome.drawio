@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-29T19:03:41.725Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="SxzXIHiZtfHWKSIj-1_m" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-30T17:27:54.928Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="_n9aEkveE2TbXFhgHF7V" version="22.1.21" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1509" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1247" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -11,18 +11,7 @@
           <mxGeometry x="160" y="120" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="WitblhVI_im-lrWHp8Qs-12" value="Aguarda a entrada do usuário" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;perimeterSpacing=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="330" y="600" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="WitblhVI_im-lrWHp8Qs-19" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry y="10" relative="1" as="geometry">
-            <mxPoint as="offset" />
-            <mxPoint x="280" y="619.67" as="sourcePoint" />
-            <mxPoint x="330" y="619.67" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="300" y="619.67" />
-              <mxPoint x="300" y="619.67" />
-            </Array>
-          </mxGeometry>
+          <mxGeometry x="1080" y="524.5" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="WitblhVI_im-lrWHp8Qs-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WitblhVI_im-lrWHp8Qs-21" target="WitblhVI_im-lrWHp8Qs-26">
           <mxGeometry relative="1" as="geometry" />
@@ -48,29 +37,23 @@
         <mxCell id="WitblhVI_im-lrWHp8Qs-27" value="Inicializa a conexão com MongoDB" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;perimeterSpacing=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="160" y="360" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="WitblhVI_im-lrWHp8Qs-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WitblhVI_im-lrWHp8Qs-28" target="WitblhVI_im-lrWHp8Qs-29">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="WitblhVI_im-lrWHp8Qs-192" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WitblhVI_im-lrWHp8Qs-28" target="WitblhVI_im-lrWHp8Qs-190">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WitblhVI_im-lrWHp8Qs-28" value="Cria o servidor WebSocket" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;perimeterSpacing=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="160" y="440" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="WitblhVI_im-lrWHp8Qs-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WitblhVI_im-lrWHp8Qs-29" target="WitblhVI_im-lrWHp8Qs-30">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="WitblhVI_im-lrWHp8Qs-29" value="Tenta iniciar o servidor" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;perimeterSpacing=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="160" y="520" width="120" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="WitblhVI_im-lrWHp8Qs-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WitblhVI_im-lrWHp8Qs-30" target="WitblhVI_im-lrWHp8Qs-31">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="WitblhVI_im-lrWHp8Qs-209" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WitblhVI_im-lrWHp8Qs-30" target="WitblhVI_im-lrWHp8Qs-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="WitblhVI_im-lrWHp8Qs-30" value="Servidor inicou?" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;perimeterSpacing=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="160" y="600" width="120" height="40" as="geometry" />
+          <mxGeometry x="1230.5" y="524.5" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="WitblhVI_im-lrWHp8Qs-31" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Encerra o programa&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;perimeterSpacing=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="160" y="680" width="120" height="40" as="geometry" />
+          <mxGeometry x="1230.5" y="604.5" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="WitblhVI_im-lrWHp8Qs-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WitblhVI_im-lrWHp8Qs-42" target="WitblhVI_im-lrWHp8Qs-44">
           <mxGeometry relative="1" as="geometry" />
@@ -321,14 +304,11 @@
         <mxCell id="WitblhVI_im-lrWHp8Qs-201" value="Cria a instância do servidor" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;perimeterSpacing=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1080" y="440" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="WitblhVI_im-lrWHp8Qs-207" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WitblhVI_im-lrWHp8Qs-204" target="WitblhVI_im-lrWHp8Qs-206">
+        <mxCell id="WitblhVI_im-lrWHp8Qs-210" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WitblhVI_im-lrWHp8Qs-204" target="WitblhVI_im-lrWHp8Qs-30">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WitblhVI_im-lrWHp8Qs-204" value="Inicia o servidor" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;perimeterSpacing=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="WitblhVI_im-lrWHp8Qs-204" value="Tenta iniciar o servidor" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;perimeterSpacing=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1230.5" y="440" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="WitblhVI_im-lrWHp8Qs-206" value="Aguarda a entrada do usuário" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;perimeterSpacing=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1230.5" y="520" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
